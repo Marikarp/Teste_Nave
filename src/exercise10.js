@@ -40,7 +40,11 @@ window.exercise10 = function () {
     { id: 3, name: "Joaquin Phoenix", movie_ids: [1, 4] },
     { id: 4, name: "Scarlett Johansson", movie_ids: [3] }
   ];
-  console.log("resultado ex10: ");
+	
+  for (let i=0; i<movies.length;i++){
+    movies[i].actors=[]
+}
+	console.log("resultado ex10: ");
   console.log(inclui(movies, actors));
 
   function inclui(filme, ator) {
